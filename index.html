@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre Mendix</title>
+    <!--Se incluye hoja de estilo cc-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <img src="Mendix_logo.png" alt=""No se puede mostrar la imagen" width="250">
+    <!--Menu-->
+    <nav>
+        <a href="#" onclick="mostrarSeccion('mendix')">¿Que es Mendix?</a>
+        <a href="#" onclick="mostrarSeccion('ventajas')">Ventajas de trabajar con Mendix</a>
+        <a href="#" onclick="mostrarSeccion('casos')">Casos de uso de Mendix</a>
+        <a href="#" onclick="mostrarSeccion('recursos')">Recursos de aprendisaje de Mendix</a>
+    
+    </nav>
+    <br>
+    <section id="mendix" class="active">
+
+    
+    <hr><!-- Separador con linea horizaontal-->
+    <h1 >Mendix</h1>
+    <p>Mendix es una plataforma de desarrollo low-code
+        propiedad de Siemens que permite crear y desplegar 
+        aplicaciones web y móviles de alta productividad de forma rápida y eficiente.
+        Utiliza un enfoque de desarrollo visual basado en modelos, en lugar de código tradicional, 
+        lo que facilita la colaboración entre equipos técnicos y de negocio para construir aplicaciones 
+        personalizadas que se integran con otros sistemas y fuentes de datos. 
+    </p>
+    <h2>Low-code</h2>
+    
+    
+    <p>El desarrollo low-code (bajo código) es un enfoque de desarrollo de software que utiliza herramientas visuales, como la funcionalidad de arrastrar y soltar y componentes preconfigurados, para crear aplicaciones y automatizar procesos con mínima escritura de código tradicional. Este método acelera el desarrollo, democratiza la creación de aplicaciones al permitir que personas con diferentes niveles de conocimiento técnico participen, y permite a los equipos de TI centrarse en tareas más complejas, lo que resulta en una mayor productividad. </p>
+    </section>
+   <section id="ventajas">
+    <h1 >Ventajas de trabajar con Mindix</h1>
+    <p>La principal ventaja de trabajar con Mendix es que permite desarrollar aplicaciones de manera rápida y eficiente gracias a su enfoque low-code, lo que reduce significativamente el tiempo y costo de desarrollo en comparación con la programación tradicional. Además, facilita la colaboración entre equipos técnicos y de negocio, ya que ofrece una interfaz visual intuitiva que permite a ambos entender y participar en el proceso. Con Mendix es posible crear aplicaciones web y móviles al mismo tiempo, integrarlas fácilmente con sistemas existentes y mantenerlas actualizadas de forma sencilla, lo que lo convierte en una solución ágil, escalable y adaptable a las necesidades de cualquier organización.</p>
+    </section>
+    <hr>
+
+    <section id="casos">
+    <h1 >Caso de uso de Mnedix</h1>
+        <ul>
+                <li>Digitalización de procesos internos</li>
+                <ul>
+                    <li>Crear apps para automatizar procesos manuales como gestión de solicitudes, aprobación de documentos, reportes internos, etc.</li>
+                    <li>Ejemplo: una empresa que llevaba el control de vacaciones en Excel lo migra a una app en Mendix donde empleados y jefes pueden solicitar y aprobar en línea.</li>
+                </ul>
+                <li>Aplicaciones móviles empresariales</li>
+                <ul>
+                    <li>Desarrollo rápido de apps móviles nativas para equipos de ventas, mantenimiento o logística.</li>
+                    <li>Ejemplo: técnicos de campo usan una app Mendix para registrar visitas, subir fotos y generar reportes en tiempo real.</li>
+                </ul>
+                <li>Extensión de sistemas heredados (legacy systems)</li>
+                <ul>
+                    <li>Integrar Mendix con ERP, CRM o bases de datos antiguas para modernizar la interfaz sin reemplazar todo el sistema.</li>
+                    <li>Ejemplo: una empresa con SAP crea un portal en Mendix para que clientes consulten facturas y pedidos.</li>
+                </ul>
+                <li>Portales de autoservicio (Self-Service)</li>
+                <ul>
+                    <li>Creación de portales para clientes, proveedores o empleados.</li>
+                    <li>Ejemplo: un banco lanza un portal donde los clientes actualizan datos, descargan estados de cuenta o levantan tickets de soporte.</li>
+                </ul>
+                <li>Prototipos y MVP (Producto Mínimo Viable)</li>
+                <ul>
+                    <li>Ideal para startups o innovación en empresas grandes, porque permite validar una idea en semanas.</li>
+                    <li>Ejemplo: un equipo de innovación desarrolla un prototipo de app de reservaciones y lo prueba con usuarios reales antes de invertir más.</li>
+                </ul>
+        </ul>
+           
+    
+    <ol><!--es una lista organizada-->
+        <li><a href="https://www.siemens.com/mx/es.html">Siemens</a></li>
+        <li><a href="https://www.enexis.nl/">Enexis</a></li>
+        <li><a href="https://www.pwc.com/mx/es.html">PwC</a></li>
+        <li><a href="https://www.careervalue.nl/">CareerValue</a></li>
+
+    </ol>
+
+    </section>
+
+    <hr>
+    <section id="recursos">
+    <h1 >Recursos de aprendisaje</h1>
+    <p>
+        Existen un conunto de recursos muy amplios para aprender a trabajar con Mendix, pero uno 
+        de los recursos oficiales sera: Mendix Academy
+    </p>
+    <a href="https://www.siemens.com/mx/es.html">Mendix Academy</a><br>
+    <a href="https://academy.mendix.com/link/home" target="_blank" rel="noopener noreferrar">Mendix Academy 2</a>
+    <!--Dentro de HTML hay dos tipos de vinculos , dentro de la misma pagina y en otras pagina-->
+    <p>Otros recuros de aprendisaje son:</p>
+    <ol>
+        <li><a href="https://pretius.com/blog/mendix-tutorial">pretius</a></li>
+    </ol>
+
+
+    </section>
+    <script>
+        function mostrarSeccion(id){
+
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+
+            document.getElementById(id).classList.add("active");
+
+        }
+    </script>
+</body>
+</html>
