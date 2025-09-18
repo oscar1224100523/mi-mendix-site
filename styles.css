@@ -40,7 +40,7 @@ nav.topnav .links{display:flex;gap:12px}
 nav.topnav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
 nav.topnav a:hover{background:rgba(255,255,255,0.08)}
 
-/* Hero */
+
 .hero{display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:center;padding:36px 0}
 .hero .intro{background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.5));padding:24px;border-radius:var(--radius);backdrop-filter: blur(6px);}
 .hero h2{margin-top:0}
@@ -79,3 +79,4 @@ footer{margin-top:36px;padding:18px 0;color:var(--muted);text-align:center}
 /* Animaciones */
 .card{transition:transform .18s ease, box-shadow .18s ease}
 .card:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(11,24,36,0.12)}
+
